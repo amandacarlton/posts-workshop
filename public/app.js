@@ -7,8 +7,9 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: 'partials/posts.html',
         controller: 'ApplicationController'
     });
+    $locationProvider.html5Mode(true);
  });
- 
+
 app.controller("ApplicationController", function ($scope) {
   $scope.name="Amanda";
 });
