@@ -1,1 +1,8 @@
 <h1>All Posts</h1>
+<div ng-controller="postController" ng-repeat="post in posts track by $index">
+  {{post.title}}
+  <p></p>
+  {{post.author}}
+  <p></p>
+  <img ng-src={{post.image}}>
+</div>
